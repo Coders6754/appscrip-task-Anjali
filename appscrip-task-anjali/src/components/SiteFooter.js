@@ -17,9 +17,11 @@ export default function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isResponsiveMobile, setIsResponsiveMobile] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const screenWidthThreshold = 768;
 
   useEffect(() => {
+    setIsMounted(true);
     const detectScreenSize = () => setIsResponsiveMobile(window.innerWidth <= screenWidthThreshold);
     detectScreenSize();
     window.addEventListener('resize', detectScreenSize);
@@ -37,6 +39,11 @@ export default function Footer() {
     console.log('Newsletter email submitted:', newsletterEmail);
     setNewsletterEmail('');
   };
+
+  // Only render content after client-side hydration
+  if (!isMounted) {
+    return <footer className={styles.footerWrapper}></footer>;
+  }
 
   return (
     <footer className={styles.footerWrapper}>

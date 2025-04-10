@@ -1,6 +1,7 @@
 'use client'; 
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import styles from "../styles/SiteHeader.module.css";
 import BrandLogo from "../assets/Logo.png";
 import IconSearch from "../assets/search-normal.png";
@@ -12,6 +13,12 @@ import IconMenu from "../assets/hamburger.png";
 
 
 export default function Header() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const navIcons = [
     { src: IconSearch, alt: "Search Icon" },
     { src: IconWishlist, alt: "Favorites" },
@@ -19,6 +26,11 @@ export default function Header() {
     { src: IconUser, alt: "Account", hideOnSmall: true },
     { src: IconLang, alt: "Language", text: "ENG", hideOnSmall: true },
   ];
+
+  // Only render full component after client-side hydration
+  if (!isMounted) {
+    return <header className={styles.navHeader}></header>;
+  }
 
   return (
     <header className={styles.navHeader}>
