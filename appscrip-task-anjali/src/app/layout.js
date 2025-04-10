@@ -1,4 +1,3 @@
-
 import "./globals.css";
 import NavBar from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
@@ -11,8 +10,8 @@ export const metadata = {
 };
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>    
         <div className="layout-container">
           <NavBar />
           <main className="main-content">{children}</main>
@@ -21,4 +20,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+} 
