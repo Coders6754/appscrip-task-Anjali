@@ -1,0 +1,225 @@
+.footerWrapper {
+  background-color: black;
+  color: white;
+  padding: 40px 60px;
+  font-family: Arial, sans-serif;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.newsletterBox,
+.reachOutBox {
+  width: 30%;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.newsText {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.formLayout {
+  display: flex;
+  margin-top: 15px;
+}
+
+.emailField {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  font-size: 14px;
+}
+
+.submitButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contactLine {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.currencyBox {
+  margin-top: 30px;
+}
+
+.flagCurrency {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.codeText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.currencyTip {
+  font-size: 12px;
+  color: #aaa;
+  max-width: 300px;
+}
+
+.horizontalRule {
+  height: 1px;
+  background-color: #333;
+  margin: 30px 0;
+}
+
+.linkSections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.brandBlock,
+.linkBlock,
+.socialBlock {
+  width: 30%;
+}
+
+.brandHeader {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navList li {
+  margin-bottom: 10px;
+}
+
+.navList a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.navList a:hover {
+  opacity: 0.7;
+}
+
+.iconRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.iconLink {
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLink img {
+  width: 18px;
+  height: 18px;
+}
+
+.paymentBlock {
+  margin-top: 30px;
+}
+
+.paymentRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.paymentRow img {
+  height: 30px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.footerNote {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  padding-top: 20px;
+}
+
+.phoneEmailBlock {
+  width: 100%;
+}
+
+.dropdownArrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .footerWrapper {
+    padding: 30px 20px;
+  }
+
+  .topRow,
+  .linkSections {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .newsletterBox,
+  .reachOutBox,
+  .brandBlock,
+  .linkBlock,
+  .socialBlock {
+    width: 100%;
+    border-bottom: 2px solid white;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+  }
+
+  .horizontalRule {
+    display: none;
+  }
+
+  .brandHeader,
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdownArrow {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .flippedArrow {
+    transform: rotate(180deg);
+  }
+}

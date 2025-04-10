@@ -1,0 +1,171 @@
+.pageWrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogWrap {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mainLayout {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.spacerLine {
+  display: none;
+}
+
+.topToolbar {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sortSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.errorBlock {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fee2e2;
+  border-radius: 0.5rem;
+  color: #b91c1c;
+  margin: 2rem 0;
+}
+
+.errorBlock h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.errorBlock p {
+  color: #ef4444;
+}
+
+.introBox {
+  margin: auto;
+  width: 100%;
+  max-width: 45rem;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 4.2rem;
+}
+
+.pageHeading {
+  font-size: 50px;
+  font-weight:400;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  
+}
+
+.pageSubheading {
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;  
+  /* border: 1px solid red; */
+}
+
+.breadcrumbPath {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .catalogWrap {
+    padding: 2rem;
+  }
+
+  .pageHeading {
+    font-size: 2.5rem;
+  }
+
+  .pageSubheading {
+    font-size: 1.25rem;
+  }
+
+  .introBox {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeading {
+    font-size: 2rem;
+  }
+
+  .pageSubheading {
+    font-size: 1.125rem;
+  }
+
+  .topToolbar {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .spacerLine {
+    display: inline-block;
+    height: 50px;
+    margin: 0 1rem;
+    border: 0.5px solid #e5e5e5;
+  }
+}
+
+@media (max-width: 640px) {
+  .pageHeading {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .pageSubheading {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 24px;
+  }
+
+  .introBox {
+    margin-bottom: 2rem;
+  }
+
+  .breadcrumbPath {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumbPath p {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .pathCurrent {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .pathDivider {
+    display: inline-block;
+    height: 1rem;
+    border: 0.5px solid #e5e5e5;
+  }
+}

@@ -1,0 +1,87 @@
+.panelShell {
+  width: 300px;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px 15px;
+  background-color: #fff;
+
+}
+
+.filterBlock {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+
+}
+
+.filterTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.iconWrap {
+  font-size: 10px;
+  color: #666;
+
+}
+
+.optionList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+}
+
+.visibleOptions {
+  max-height: 500px;
+}
+
+.optionEntry {
+  padding: 8px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #252020;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+
+}
+
+.checkBox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.panelHidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .panelShell {
+    position: absolute;
+    z-index: 999;
+    background: white;
+    border: 1px solid rgb(255, 236, 236);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+}

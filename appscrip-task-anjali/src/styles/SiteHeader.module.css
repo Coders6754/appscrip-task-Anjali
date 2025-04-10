@@ -1,0 +1,165 @@
+.navHeader {
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 20px;
+  padding-bottom: 17.6px;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+  /* border: 1px solid rgb(13, 190, 81); */
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.brand {
+  flex-shrink: 0;
+  /* border: 1px solid rgb(81, 7, 160); */
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+}
+
+.brandText {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bottomNav {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.languageLabel {
+  font-weight: 700;
+  color: #252020;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .bottomNav {
+    display: none;
+  }
+}
+
+.navItem {
+  font-size: 20px;
+  font-weight: 700;
+  color: #252020;
+  transition: color 0.2s;
+  letter-spacing: 1px;
+}
+
+.navItem:hover {
+  color: #111827;
+}
+
+.actionIcons {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #4b5563;
+  margin-left: 16px;
+  transition: color 0.2s;
+}
+
+.iconWrapper:hover {
+  color: #111827;
+}
+
+.iconImage {
+  width: 20px;
+  height: 20px;
+}
+
+.badgeCount {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #4b5563;
+  margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .toggleBtn {
+    display: none;
+  }
+}
+
+.responsiveHide {
+  display: inline-flex;
+}
+
+.menuToggle {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .responsiveHide {
+    display: none;
+  }
+
+  .brandText {
+    font-size: 20px;
+  }
+
+  .menuToggle {
+    display: block;
+    font-weight: 800;
+    color: #252020;
+    width: 20px;
+    height: 20px;
+  }
+
+  .brandLink img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
