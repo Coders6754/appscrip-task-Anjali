@@ -1,3 +1,4 @@
+'use client'; 
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/SiteHeader.module.css";
@@ -8,6 +9,7 @@ import IconCart from "../assets/shopping-bag.png";
 import IconUser from "../assets/profile.png";
 import IconLang from "../assets/arrow-left.png";
 import IconMenu from "../assets/hamburger.png";
+
 
 export default function Header() {
   const navIcons = [

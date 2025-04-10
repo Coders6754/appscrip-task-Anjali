@@ -1,4 +1,3 @@
-// components/ProductGallery.js
 "use client";
 
 import Image from "next/image";

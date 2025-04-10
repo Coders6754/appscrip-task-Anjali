@@ -1,4 +1,3 @@
-// components/SortSelector.js
 "use client";
 
 import { useState } from "react";
