@@ -6,6 +6,7 @@ export const metadata = {
   title: "Appscrip Lists",
   description:
     "Curated premium selections just for you. Discover top-tier goods with free shipping over $50.",
+  metadataBase: new URL('https://appscrip-task-anjali.vercel.app'),
   openGraph: {
     title: "Appscrip Lists",
     description:
