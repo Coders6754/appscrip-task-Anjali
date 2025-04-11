@@ -13,6 +13,9 @@ const nextConfig = {
     // Don't block deployment on ESLint errors
     ignoreDuringBuilds: true,
   },
+  output: 'export',
+  distDir: '.next',
+  trailingSlash: true,
 }
 
 export default nextConfig
