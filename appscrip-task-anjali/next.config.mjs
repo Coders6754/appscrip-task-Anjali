@@ -3,10 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['fakestoreapi.com'],
-    unoptimized: process.env.NODE_ENV === 'production',
+    unoptimized: true,
   },
-  output: 'standalone',
-  poweredByHeader: false,
   typescript: {
     // Don't block deployment on TypeScript errors
     ignoreBuildErrors: true,
