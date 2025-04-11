@@ -86,8 +86,12 @@
 
 .horizontalRule {
   height: 1px;
-  background-color: #333;
   margin: 30px 0;
+  width: 1248.0000000000048;
+  top: 317px;
+  left: 128px;
+  border-width: 1px;
+  border: 1px solid #FFFFFF
 }
 
 .linkSections {
@@ -135,18 +139,19 @@
 }
 
 .iconLink {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 50%;
   width: 36px;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1.2px solid #FFFFFF;
 }
 
 .iconLink img {
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
 }
 
 .paymentBlock {
@@ -163,14 +168,15 @@
   height: 30px;
   background-color: white;
   border-radius: 4px;
-  padding: 5px;
+
 }
 
 .footerNote {
   text-align: center;
   font-size: 12px;
-  color: #aaa;
+  color: #FFFFFF;
   padding-top: 20px;
+  font-weight: 400;
 }
 
 .phoneEmailBlock {

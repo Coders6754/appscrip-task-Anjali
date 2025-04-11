@@ -134,10 +134,10 @@ export default function Footer() {
             <div>
               <div className={styles.iconRow}>
                 <a href="/" className={styles.iconLink}>
-                  <Image width={51} height={30} src={instagramIcon} alt="Instagram" />
+                  <Image width={40} height={40} src={instagramIcon} alt="Instagram" />
                 </a>
                 <a href="/" className={styles.iconLink}>
-                  <Image width={51} height={30} src={linkedinIcon} alt="LinkedIn" />
+                  <Image width={40} height={40} src={linkedinIcon} alt="LinkedIn" />
                 </a>
               </div>
 
