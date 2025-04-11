@@ -14,7 +14,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   output: 'export',
-  distDir: '.next',
+  distDir: 'out',
   trailingSlash: true,
 }
 
